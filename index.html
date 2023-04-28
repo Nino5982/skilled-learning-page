@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+    />
+    <title>skilled-learning-page</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1845px;
+        width: 1440px;
+        margin-left: 165px;
+        margin-right: 165px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        width: 75%;
+        /* padding: 24px 165px; */
+      }
+      .header p {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 35px;
+        color: #13183f;
+      }
+      .header a {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #ffffff;
+        background-color: #13183f;
+        border-radius: 28px;
+        height: 48px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+      /* .header a:hover {
+        background: #666ca3;
+      } */
+
+      .section {
+        display: flex;
+        width: 31%;
+        height: 359px;
+        /* padding-bottom: 226px;
+        padding-left: 165px; */
+        flex-direction: column;
+        justify-content: center;
+      }
+      .section h1 {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 71px;
+
+        /* 13183F */
+
+        color: #13183f;
+      }
+      .section p {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;
+        color: #83869a;
+      }
+      .section a {
+        background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+        border-radius: 31.5px;
+        height: 63px;
+        width: 167px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 19px 0;
+
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+        color: #ffffff;
+      }
+
+      .hero-div {
+        display: flex;
+        width: 50%;
+        overflow: hidden;
+        margin-top: -320px;
+        margin-left: 108px;
+      }
+      .courses-cover {
+        width: 90%;
+        background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+      }
+      .courses {
+        display: flex;
+        flex-wrap: wrap;
+        width: 88%;
+        height: 888px;
+        justify-content: space-evenly;
+        align-content: space-around;
+        /* background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%); */
+      }
+
+      .courses-size {
+        height: 322px;
+        width: 350px;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+        border-radius: 15px;
+        /* margin: 30px; */
+        /* padding-left: 32px;
+        padding-top: 64px;
+        padding-right: 32px;
+        padding-bottom: 40px; */
+      }
+      .courses-img {
+        margin-top: -150px;
+        margin-left: 32px;
+      }
+      .courses-size h1 {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+
+        /* 13183F */
+
+        color: #13183f;
+      }
+      .courses-size p {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        /* padding-top: 20px; */
+
+        /* or 156% */
+
+        /* 83869A */
+
+        color: #83869a;
+      }
+      .courses-size a {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+
+        /* identical to box height, or 156% */
+
+        /* F74780 */
+
+        color: #f74780;
+        text-decoration: none;
+      }
+      .check {
+        background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+        border-radius: 15px;
+      }
+      .check p {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        /* or 125% */
+        color: #ffffff;
+      }
+
+      .footer {
+        height: 160px;
+        width: 100%;
+        background: #13183f;
+        /* margin-top: -55px; */
+        margin-left: -132px;
+      }
+      .footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 165px;
+      }
+      .footer p {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 35px;
+        color: #ffffff;
+      }
+      .footer a {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #ffffff;
+        background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+        border-radius: 28px;
+        height: 48px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <p>skilled</p>
+      <a href="">get started</a>
+    </div>
+    <div class="section">
+      <h1>Maximize skill, minimize budget</h1>
+      <p>
+        Our modern courses across a range of in-demand skills will give you the
+        knowledge you need to live the life you want.
+      </p>
+      <a href="">Get Started</a>
+    </div>
+    <div class="hero-div">
+      <img src="image-hero-desktop.png" alt="image-hero-desktop" />
+    </div>
+    <div class="courses-cover">
+      <div class="courses">
+        <div class="check courses-size">
+          <p>Check out our most popular courses!</p>
+        </div>
+        <div class="animation courses-size">
+          <img
+            src="icon-animation.svg"
+            alt="icon-animation"
+            class="courses-img"
+          />
+          <h1>Animation</h1>
+          <p>
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="" class="get-started">Get Started</a>
+        </div>
+        <div class="design courses-size">
+          <img src="icon-design.svg" alt="icon-design" class="courses-img" />
+          <h1>Design</h1>
+          <p>
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="" class="get-started">Get Started</a>
+        </div>
+        <div class="Photography courses-size">
+          <img
+            src="icon-photography.svg"
+            alt="icon-photography"
+            class="courses-img"
+          />
+          <h1>Photography</h1>
+          <p>
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="" class="get-started">Get Started</a>
+        </div>
+        <div class="Crypto courses-size">
+          <img src="icon-crypto.svg" alt="icon-crypto" class="courses-img" />
+          <h1>Crypto</h1>
+          <p>
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="" class="get-started">Crypto</a>
+        </div>
+        <div class="Business courses-size">
+          <img
+            src="icon-business.svg"
+            alt="icon-business"
+            class="courses-img"
+          />
+          <h1>Business</h1>
+          <p>
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="" class="get-started">Business</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>skilled</p>
+        <a href="">get started</a>
+      </div>
+    </div>
+  </body>
+</html>
